@@ -1,4 +1,4 @@
-# Magento Category Importer for Magento 2 >= 2.1.x
+# Magento Product Attribute Importer for Magento 2 >= 2.1.x
 
 This is a Magento module which adds a new command (import:productattribute) to the bin/magento shell to import product attributes given a SKU
 
