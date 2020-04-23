@@ -14,7 +14,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "Catgento\\CategoryImporter\\": ""
+            "Catgento\\ProductAttributeImport\\": ""
         }
     },
     "license": [

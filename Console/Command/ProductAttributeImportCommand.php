@@ -95,12 +95,6 @@ class ProductAttributeImportCommand extends Command
                     'p',
                     InputOption::VALUE_REQUIRED,
                     'Enter path to CSV file in Magento dir (eg. "var/import/productattributes.csv")'
-                ),
-                new InputOption(
-                    'additional',
-                    'a',
-                    InputOption::VALUE_OPTIONAL,
-                    'Enter custom category attribute codes separated by comma (eg. "my_custom_1,my_custom2,my_custom3")'
                 )
             ]);
 
