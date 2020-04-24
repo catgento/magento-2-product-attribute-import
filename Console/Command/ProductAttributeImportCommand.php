@@ -1,6 +1,6 @@
 <?php
 /**
- * Product Attribute Importer Command 
+ * Product Attribute Importer Command
  * @category  Catgento
  * @package   Catgento_ProductAttributeImportCommand
  * @license   https://opensource.org/licenses/OSL-3.0 Open Software License v. 3.0 (OSL-3.0)
@@ -186,11 +186,7 @@ class ProductAttributeImportCommand extends Command
     protected function mapHeaders($row)
     {
         foreach ($row as $key => $item) {
-            foreach ($this->requiredHeaders as $header) {
-                if ($item == $header) {
-                    $this->headersMap[$header] = $key;
-                }
-            }
+            $this->headersMap[$item] = $key;
         }
     }
 }
