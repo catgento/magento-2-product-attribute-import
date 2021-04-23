@@ -70,10 +70,12 @@ class ProductAttributeImportCommand extends Command
         DirectoryList $directoryList,
         StoreManagerInterface $storeManager,
         ProductRepository $productRepository,
-        Product $productModel
+        Product $productModel,
+        \Magento\Framework\App\State $state
     )
     {
         $this->fileCsv = $fileCsv;
+        $this->state = $state;
         $this->directoryList = $directoryList;
         $this->storeManager = $storeManager;
         $this->storeManager->setCurrentStore('admin');
@@ -108,6 +110,8 @@ class ProductAttributeImportCommand extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
+        $this->state->setAreaCode(\Magento\Framework\App\Area::AREA_ADMINHTML);
+
         try {
             $path = $input->getOption('path');
             if (!$path) {
