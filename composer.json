@@ -8,7 +8,7 @@
         "magento/module-cron": ">=100.0.0"
     },
     "type": "magento2-module",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "autoload": {
         "files": [
             "registration.php"
