@@ -20,6 +20,7 @@ use Magento\Framework\File\Csv;
 use Magento\Framework\App\Filesystem\DirectoryList;
 use Magento\Store\Model\StoreManagerInterface;
 
+#[\AllowDynamicProperties]
 class ProductAttributeImportCommand extends Command
 {
     /**
